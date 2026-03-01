@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 圆形背景 -->
+    <path
+        android:fillColor="#BBDEFB"
+        android:pathData="M54,54 A54,54 0 0,1 54,0 A54,54 0 0,1 54,54 Z" />
+    <!-- 太阳 -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M54,28 A12,12 0 0,1 54,16 A12,12 0 0,1 54,28 Z" />
+    <!-- 天空 -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,40 A34,34 0 0,1 54,6 A34,34 0 0,1 54,40 Z" />
+    <!-- 道路背景 -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M0,54 L108,54 L108,108 L0,108 Z" />
+    <!-- 道路透视 -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M36,60 L72,60 L96,108 L12,108 Z" />
+    <!-- 道路分隔线 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,60 L54,108" />
+    <!-- 虚线 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,68 A1,1 0 0,1 54,66 A1,1 0 0,1 54,68 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,76 A1,1 0 0,1 54,74 A1,1 0 0,1 54,76 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,84 A1,1 0 0,1 54,82 A1,1 0 0,1 54,84 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,92 A1,1 0 0,1 54,90 A1,1 0 0,1 54,92 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,100 A1,1 0 0,1 54,98 A1,1 0 0,1 54,100 Z" />
+</vector>
