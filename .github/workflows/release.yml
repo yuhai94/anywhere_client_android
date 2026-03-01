@@ -50,23 +50,28 @@ jobs:
           RELEASE_KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           RELEASE_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
 
+      - name: Rename APK and AAB
+        run: |
+          mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/awcli.apk
+          mv app/build/outputs/bundle/release/app-release.aab app/build/outputs/bundle/release/awcli.aab
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: app/build/outputs/apk/release/app-release.apk
+          path: app/build/outputs/apk/release/awcli.apk
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
         with:
           name: app-bundle
-          path: app/build/outputs/bundle/release/app-release.aab
+          path: app/build/outputs/bundle/release/awcli.aab
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            app/build/outputs/apk/release/app-release.apk
-            app/build/outputs/bundle/release/app-release.aab
+            app/build/outputs/apk/release/awcli.apk
+            app/build/outputs/bundle/release/awcli.aab
           draft: false
           prerelease: false
